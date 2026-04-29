@@ -1,0 +1,119 @@
+/* Configuración Base */
+body {
+    background-color: #f0f4f1; /* Gris verdoso muy claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta del Formulario */
+.form-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+/* Encabezado */
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    color: #2e7d32; /* Verde bosque */
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.form-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Estilo de Fieldsets y Legends */
+fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1b5e20;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Grupos de Input */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd1d1;
+    border-radius: 6px;
+    box-sizing: border-box; /* Evita que el padding ensanche el input */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efectos Focus */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+    background-color: #f9fff9;
+    box-shadow: 0 0 8px rgba(46, 125, 50, 0.2);
+}
+
+/* Botón */
+.btn-submit {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .form-card {
+        padding: 20px;
+    }
+}
